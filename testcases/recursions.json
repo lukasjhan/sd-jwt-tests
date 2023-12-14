@@ -1,0 +1,81 @@
+{
+  "claims": {
+    "foo": ["one", "two"],
+    "bar": {
+      "red": 1,
+      "green": 2
+    },
+    "qux": [["blue", "yellow"]],
+    "baz": [
+      ["orange", "purple"],
+      ["black", "white"]
+    ],
+    "animals": {
+      "snake": {
+        "name": "python",
+        "age": 10
+      },
+      "bird": {
+        "name": "eagle",
+        "age": 20
+      }
+    }
+  },
+  "disclosureFrame": [
+    "foo.0",
+    "foo.1",
+    "bar.red",
+    "bar.green",
+    "qux.0",
+    "qux.0.0",
+    "qux.0.1",
+    "baz.0",
+    "baz.0.0",
+    "baz.0.1",
+    "baz.1",
+    "baz.1.0",
+    "baz.1.1",
+    "animals.snake",
+    "animals.snake.name",
+    "animals.snake.age",
+    "animals.bird",
+    "animals.bird.name",
+    "animals.bird.age"
+  ],
+  "holder_disclosed_claims": [
+    "foo.1",
+    "bar.green",
+    "qux.0",
+    "qux.0.0",
+    "qux.0.1",
+    "baz.0",
+    "baz.0.0",
+    "baz.0.1",
+    "baz.1",
+    "baz.1.0",
+    "baz.1.1",
+    "animals.snake",
+    "animals.snake.age",
+    "animals.bird",
+    "animals.bird.age"
+  ],
+  "expect_verified_user_claims": {
+    "foo": ["two"],
+    "bar": {
+      "green": 2
+    },
+    "qux": [["blue", "yellow"]],
+    "baz": [
+      ["orange", "purple"],
+      ["black", "white"]
+    ],
+    "animals": {
+      "snake": {
+        "age": 10
+      },
+      "bird": {
+        "age": 20
+      }
+    }
+  }
+}

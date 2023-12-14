@@ -1,0 +1,10 @@
+{
+  "claims": {
+    "null_values": [null, null, null, null]
+  },
+  "disclosureFrame": ["null_values.1", "null_values.2"],
+  "holder_disclosed_claims": [],
+  "expect_verified_user_claims": {
+    "null_values": [null, null]
+  }
+}

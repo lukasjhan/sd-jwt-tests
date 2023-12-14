@@ -1,0 +1,41 @@
+{
+  "claims": {
+    "array_with_recursive_sd": [
+      "boring",
+      {
+        "foo": "bar",
+        "baz": {
+          "qux": "quxx"
+        }
+      },
+      ["foo", "bar"]
+    ],
+    "test2": ["foo", "bar"]
+  },
+  "disclosureFrame": [
+    "array_with_recursive_sd.1.baz",
+    "array_with_recursive_sd.2.0",
+    "array_with_recursive_sd.baz.1",
+    "test2.0",
+    "test2.1"
+  ],
+  "holder_disclosed_claims": [
+    "array_with_recursive_sd.1.baz",
+    "array_with_recursive_sd.2.1",
+    "test2.0",
+    "test2.1"
+  ],
+  "expect_verified_user_claims": {
+    "array_with_recursive_sd": [
+      "boring",
+      {
+        "foo": "bar",
+        "baz": {
+          "qux": "quxx"
+        }
+      },
+      ["bar"]
+    ],
+    "test2": ["foo", "bar"]
+  }
+}

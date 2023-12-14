@@ -1,0 +1,35 @@
+{
+  "claims": {
+    "firstname": "John",
+    "lastname": "Doe",
+    "ssn": "123-45-6789",
+    "id": "1234",
+    "data": {
+      "firstname": "John",
+      "lastname": "Doe",
+      "ssn": "123-45-6789",
+      "list": [{ "r": "1" }, "b", "c"]
+    },
+    "data2": {
+      "hi": "bye"
+    }
+  },
+  "disclosureFrame": [
+    "firstname",
+    "id",
+    "data2",
+    "data.list",
+    "data.list.0",
+    "data.list.0.r",
+    "data.list.2",
+    "data2.hi"
+  ],
+  "holder_disclosed_claims": ["firstname", "id"],
+  "expect_verified_user_claims": {
+    "lastname": "Doe",
+    "ssn": "123-45-6789",
+    "data": { "firstname": "John", "lastname": "Doe", "ssn": "123-45-6789" },
+    "id": "1234",
+    "firstname": "John"
+  }
+}

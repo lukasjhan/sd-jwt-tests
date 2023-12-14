@@ -1,0 +1,12 @@
+{
+  "claims": {
+    "is_over": {
+      "13": false,
+      "18": true,
+      "21": false
+    }
+  },
+  "disclosureFrame": ["is_over.13", "is_over.18", "is_over.21"],
+  "holder_disclosed_claims": [],
+  "expect_verified_user_claims": {}
+}

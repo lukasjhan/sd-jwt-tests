@@ -1,0 +1,46 @@
+{
+  "claims": {
+    "value_Data_types": {
+      "test_null": null,
+      "test_int": 42,
+      "test_float": 3.14,
+      "test_str": "foo",
+      "test_bool": true,
+      "test_arr": ["Test"],
+      "test_object": {
+        "foo": "bar"
+      }
+    }
+  },
+  "disclosureFrame": [
+    "value_Data_types.test_null",
+    "value_Data_types.test_int",
+    "value_Data_types.test_float",
+    "value_Data_types.test_str",
+    "value_Data_types.test_bool",
+    "value_Data_types.test_arr",
+    "value_Data_types.test_object"
+  ],
+  "holder_disclosed_claims": [
+    "value_Data_types.test_null",
+    "value_Data_types.test_int",
+    "value_Data_types.test_float",
+    "value_Data_types.test_str",
+    "value_Data_types.test_bool",
+    "value_Data_types.test_arr",
+    "value_Data_types.test_object"
+  ],
+  "expect_verified_user_claims": {
+    "value_Data_types": {
+      "test_null": null,
+      "test_int": 42,
+      "test_float": 3.14,
+      "test_str": "foo",
+      "test_bool": true,
+      "test_arr": ["Test"],
+      "test_object": {
+        "foo": "bar"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "claims": {
+    "sub": "john_deo_42",
+    "given_name": "John",
+    "family_name": "Deo",
+    "email": "johndeo@example.com",
+    "phone": "+1-202-555-0101",
+    "address": {
+      "street_address": "123 Main St",
+      "locality": "Anytown",
+      "region": "Anystate",
+      "country": "US"
+    },
+    "birthdate": "1940-01-01"
+  },
+  "disclosureFrame": [
+    "sub",
+    "given_name",
+    "family_name",
+    "email",
+    "phone",
+    "address",
+    "birthdate"
+  ],
+  "holder_disclosed_claims": ["given_name", "family_name", "address"],
+  "expect_verified_user_claims": {
+    "given_name": "John",
+    "family_name": "Deo",
+    "address": {
+      "street_address": "123 Main St",
+      "locality": "Anytown",
+      "region": "Anystate",
+      "country": "US"
+    }
+  }
+}

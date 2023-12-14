@@ -1,0 +1,10 @@
+{
+  "claims": {
+    "nationalities": ["US", "CA", "DE"]
+  },
+  "disclosureFrame": ["nationalities.0", "nationalities.1"],
+  "holder_disclosed_claims": ["nationalities.1"],
+  "expect_verified_user_claims": {
+    "nationalities": ["CA", "DE"]
+  }
+}
