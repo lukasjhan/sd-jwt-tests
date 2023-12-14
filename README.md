@@ -43,8 +43,7 @@ Claims are the data that the issuer wants to sign. It is a JSON object.
       "country": "US"
     },
     "birthdate": "1940-01-01"
-  },
-  ...
+  }
 }
 ```
 
@@ -91,8 +90,7 @@ So the disclosureFrame of the Claims can be:
     "phone",
     "address",
     "birthdate"
-  ],
-  ...
+  ]
 }
 ```
 
@@ -104,13 +102,8 @@ It's subset of the disclosureFrame.
 
 ```json
 {
-  "holder_disclosed_claims": [
-    "given_name",
-    "family_name",
-  ],
-  ...
+  "holder_disclosed_claims": ["given_name", "family_name"]
 }
-
 ```
 
 ### expect_verified_user_claims
@@ -121,8 +114,7 @@ The expected_verified_user_claims is an disclosd claims that the verifier wants 
 {
   "expect_verified_user_claims": {
     "given_name": "John",
-    "family_name": "Deo",
-  },
-  ...
+    "family_name": "Deo"
+  }
 }
 ```
